@@ -21,7 +21,7 @@ with  open(path, encoding="mbcs") as f:
     lines = f.readlines()
 
 
-#Delete full ine if there is in that line the phrase
+#Delete full line if there is in that line the phrase
 with open(path, 'w', encoding="mbcs") as f:
     for line in lines:
         if line.strip("\n").find(phrase) == -1 :
